@@ -1,0 +1,47 @@
+.idea
+/currency-exchange-service/.mvn
+/currency-conversion-service/.mvn
+/limits-service/.mvn
+/spring-cloud-config-server/.mvn
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+/currency-conversion-service/mvnw
+/currency-exchange-service/mvnw
+/spring-cloud-config-server/mvnw
+/limits-service/mvnw
+/currency-conversion-service/mvnw.cmd
+/currency-exchange-service/mvnw.cmd
+/spring-cloud-config-server/mvnw.cmd
+/limits-service/mvnw.cmd
