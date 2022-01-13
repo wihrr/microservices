@@ -3,6 +3,9 @@
 /currency-conversion-service/.mvn
 /limits-service/.mvn
 /spring-cloud-config-server/.mvn
+/netflix-eureka-naming-server/.mvn
+/netflix-zuul-api-gateway-server/.mvn
+
 
 HELP.md
 target/
@@ -45,3 +48,8 @@ build/
 /currency-exchange-service/mvnw.cmd
 /spring-cloud-config-server/mvnw.cmd
 /limits-service/mvnw.cmd
+/netflix-eureka-naming-server/.mvn/wrapper/maven-wrapper.jar
+/netflix-eureka-naming-server/mvnw
+/netflix-eureka-naming-server/mvnw.cmd
+/netflix-zuul-api-gateway-server/mvnw.cmd
+/netflix-zuul-api-gateway-server/mvnw
