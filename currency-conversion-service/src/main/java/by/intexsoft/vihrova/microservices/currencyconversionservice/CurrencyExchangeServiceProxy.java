@@ -13,5 +13,5 @@ public interface CurrencyExchangeServiceProxy {
 
 //    @GetMapping(value = "/currency-exchange/from/{from}/to/{to}", produces = MediaType.APPLICATION_JSON_VALUE)
 @GetMapping(value = "/currency-exchange-service/currency-exchange/from/{from}/to/{to}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public CurrencyConvertBean retrieveExchangeValue(@PathVariable String from, @PathVariable String to);
+    public CurrencyConvertBean retrieveExchangeValue(@PathVariable("from") String from, @PathVariable("to") String to);
 }

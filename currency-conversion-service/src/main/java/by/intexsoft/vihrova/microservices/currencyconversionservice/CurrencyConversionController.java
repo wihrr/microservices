@@ -1,6 +1,8 @@
 package by.intexsoft.vihrova.microservices.currencyconversionservice;
 
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +16,8 @@ import java.util.Map;
 @RestController
 @RequiredArgsConstructor
 public class CurrencyConversionController {
+
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     private final CurrencyExchangeServiceProxy proxy;
 
@@ -44,6 +48,8 @@ public class CurrencyConversionController {
                                                @PathVariable BigDecimal quantity) {
 
         CurrencyConvertBean response = proxy.retrieveExchangeValue(from, to);
+
+        logger.info("{}", response);
 
         return new CurrencyConvertBean(response.getId(), from, to, response.getConversionMultiple(),
                 quantity, quantity.multiply(response.getConversionMultiple()), response.getPort());

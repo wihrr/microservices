@@ -28,3 +28,6 @@ zuul:
     currency-exchange-service:
       path: /currency-exchange-service/**
       serviceId: currency-exchange-service
+    currency-conversion-service:
+      path: /currency-conversion-service/**
+      serviceId: currency-conversion-service
