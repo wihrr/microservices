@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
+@Component
 @RequiredArgsConstructor
 public class ZuulLoggingFilter extends ZuulFilter {
 

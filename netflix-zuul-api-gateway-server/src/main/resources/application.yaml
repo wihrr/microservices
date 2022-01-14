@@ -26,5 +26,5 @@ zuul:
     socket-timeout-millis: 5000
   routes:
     currency-exchange-service:
-      path: /exchange-service/**
+      path: /currency-exchange-service/**
       serviceId: currency-exchange-service
